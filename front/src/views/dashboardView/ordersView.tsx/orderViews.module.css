@@ -1,0 +1,28 @@
+.contOrderViews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contMessage{
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.poster {
+    display: flex;
+    justify-content: center; /* Centra horizontal */
+    align-items: center;     /* Centra vertical */
+    width: 100%;
+    height: 30rem;           /* Altura del contenedor */
+}
+
+.imagen{
+    display: block;
+}

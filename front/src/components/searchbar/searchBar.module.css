@@ -1,0 +1,22 @@
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.buttonLupa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.inputSearch{
+    background-color: white;
+    padding: .7rem;
+    border-radius: 20px;
+    width: 15rem;
+}
+

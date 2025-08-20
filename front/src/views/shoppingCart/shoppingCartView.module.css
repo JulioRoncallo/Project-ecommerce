@@ -1,0 +1,135 @@
+.contShopping {
+    background-image: url(/images/fondoCart.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 3rem 1rem;
+    margin: 2rem;
+    border-radius: 40px;
+}
+
+.contCart {
+    background-color: white;
+    width: 50rem;
+    height: 60rem;
+    border-radius: 20px;
+    margin-top: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contInfoCart {
+    width: 100%;
+}
+
+/* ✅ Grid para escritorio y tablet */
+.itemCart {
+    display: grid;
+    grid-template-columns: 1fr 80px 80px;
+    align-items: center;
+    padding: 8px 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin-bottom: .5rem;
+    gap: 1rem;
+}
+.itemCart button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Alinear precios a la derecha */
+.itemCart p:nth-child(2) {
+    text-align: right; 
+}
+
+.contTotalBtn {
+    background-color: white;
+    width: 50rem;
+    height: 10rem;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contTotalBtn > p {
+    font-size: 1.5rem;
+}
+
+.MessageNoProducts {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 20px;
+    width: 10rem;
+}
+    .button:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.button:active {
+    background-color: #0056b3;
+}
+.Message {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* 📱 Móvil */
+@media (max-width: 767px) {
+    .contShopping {
+        height: auto;
+        padding: 1rem;
+        margin: 1rem;
+        gap: 1rem;
+    }
+    .contCart {
+        width: 100%;
+        height: auto;
+    }
+    .itemCart {
+        grid-template-columns: 1fr; 
+        text-align: left;
+        padding: 1rem;
+    }
+    .itemCart p:nth-child(2) {
+        text-align: left; 
+    }
+    .contTotalBtn {
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+    }
+    .contTotalBtn > p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .button {
+        width: 100%;
+        max-width: 15rem;
+        text-align: center;
+    }
+
+}

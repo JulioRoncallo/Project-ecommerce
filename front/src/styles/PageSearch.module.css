@@ -1,0 +1,50 @@
+
+
+.contCardProduct {
+    padding: 3rem 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+
+.contCardProduct > a {
+    flex: 1 1 calc(33.333% - 2rem); /* 3 por fila */
+    max-width: calc(33.333% - 2rem);
+    display: flex;
+    justify-content: center;
+}
+
+.noProduct{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0rem;
+    gap: 1rem;
+}
+.noProduct>h3{
+    font-size: 1.5rem;
+    color: red;
+}
+.imagenNoProduct{
+    border-radius: 30px;
+    box-shadow:0 4px 15px rgba(0, 0, 0, 0.7);
+}
+
+/*tablet */
+@media (max-width: 1024px) {
+    .contCardProduct > a {
+        flex: 1 1 calc(50% - 2rem); /* 2 por fila */
+        max-width: calc(50% - 2rem);
+    }
+}
+
+/* móvil */
+@media (max-width: 640px) {
+    .contCardProduct > a {
+        flex: 1 1 100%; /* 1 por fila */
+        max-width: 100%;
+    }
+}

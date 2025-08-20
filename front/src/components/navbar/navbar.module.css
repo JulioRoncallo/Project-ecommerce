@@ -1,0 +1,72 @@
+
+
+.contNavbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    animation: aparecerDesdeArriba 1s ease-out;
+}
+
+.navLink{
+    display: flex;
+    align-items: center; 
+    gap: 1rem;
+    font-size: 1.3rem;
+    width: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+/* Icono al inicio */
+.navLink > :first-child {
+    margin-right: auto; /* empuja el resto de links al centro/derecha */
+}
+/* Links centrados */
+.navLink > .linkNavbar:not(:first-child) {
+    margin: 0 1rem; /* espacio entre links */
+    display: flex;
+    align-items: center;
+}
+.linkNavbar{
+    display: flex;
+}
+
+.linkNavbar:focus,
+.linkNavbar:active,
+.linkNavbar:focus-visible {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+@keyframes aparecerDesdeArriba{
+    0% {
+            opacity: 0;
+            transform: translateY(-50px);
+    }
+    100% {
+            opacity: 1;
+            transform: translateY(0);
+    }
+}
+
+
+/* Ipad*/
+@media (max-width: 1024px) {
+
+    .navLink{
+        display: flex;
+        gap: 1rem;
+        font-size: 1.6rem;
+    }
+}
+
+/*Móvil */
+@media (max-width: 767px) {
+    .navLink{
+        display: flex;
+        gap: 1rem;
+        font-size: 1.1rem;
+    }
+}

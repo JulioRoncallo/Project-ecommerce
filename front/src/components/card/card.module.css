@@ -1,0 +1,40 @@
+
+
+.contCard{
+    width: 100%;
+    margin-bottom: 2rem;
+    display: block;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(2, 2, 2, 0.719);
+}
+
+.InfoProduct{
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.contImg{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+.imgWrapper{
+    position: relative;
+    width: 100% !important;
+    height: 100%!important;
+}
+
+/* Móvil */
+@media (max-width: 767px) {
+    .contImg {
+        width: 390px;
+        height: 320px;
+    }
+
+    .InfoProduct {
+        text-align: center;
+    }
+}

@@ -1,0 +1,10 @@
+
+
+.contMenu{
+    display: flex;
+    background-color: rgba(201, 201, 201, 0.404);
+    height: 4rem;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}

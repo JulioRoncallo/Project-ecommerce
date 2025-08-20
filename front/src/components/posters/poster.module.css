@@ -1,0 +1,27 @@
+
+
+.contPosters{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+.posterImg{
+object-fit: contain; /* o 'cover', según tu necesidad */
+    width: 100%;
+    height: auto;
+
+}
+
+/* Móvil */
+@media (max-width: 767px) {
+    .contPosters {
+        flex-direction: column;
+        align-items: center; /* centra las imágenes */
+    }
+
+    .posterImg {
+        max-width: 90%; /* reduce un poco para que no ocupen todo el ancho */
+    }
+}

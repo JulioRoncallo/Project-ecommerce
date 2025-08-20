@@ -1,0 +1,23 @@
+
+
+.contRegisterView{
+    background-image: url(/images/viewSuperior.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 3rem 1rem;
+    margin: 2rem;
+    border-radius: 40px;
+}
+
+.sectMessage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
