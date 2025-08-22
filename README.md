@@ -22,8 +22,7 @@ Fetch API para comunicación con el backend
 ⚙️ Instalación y ejecución
 
 1. Clona el repositorio:
-git clone https://github.com/TU-USUARIO/mi-tienda-nextjs.git
-cd mi-tienda-nextjs
+git clone https://github.com/JulioRoncallo/Project-ecommerce
 
 2. Instala dependencias:
 npm install
